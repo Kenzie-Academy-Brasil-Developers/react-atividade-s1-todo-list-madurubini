@@ -16,10 +16,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="Container">
+        <h2>To Do's list</h2>
+        <p> Utilize o box abaixo para adicionar suas tarefas!</p>
+
         <Form addTodo={addTodo}></Form>
         <TodoList list={list} handleTodo={handleTodo}></TodoList>
-      </header>
+      </div>
     </div>
   );
 }

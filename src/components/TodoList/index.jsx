@@ -1,10 +1,15 @@
+import "./style.css";
+import { FaCheckCircle } from "react-icons/fa";
+
 function TodoList({ list, handleTodo }) {
   return (
-    <ul>
+    <ul className="Lista">
       {list.map((tarefa, index) => (
-        <li key={index}>
+        <li className="Tarefa" key={index}>
           {tarefa}
-          <button onClick={() => handleTodo(tarefa)}>Concluída</button>
+          <button onClick={() => handleTodo(tarefa)}>
+            <FaCheckCircle className="Checked" />
+          </button>
         </li>
       ))}
     </ul>

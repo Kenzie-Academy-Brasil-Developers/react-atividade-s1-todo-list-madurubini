@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./style.css";
 
 function Form({ addTodo }) {
   const [userInput, setUserInput] = useState("");
@@ -20,7 +21,7 @@ function Form({ addTodo }) {
         onChange={handleChange}
         placeholder="Digite sua tarefa aqui"
       />
-      <button onClick={() => addTodo(userInput)}>Add Tarefa</button>
+      <button onClick={() => addTodo(userInput)}>Add</button>
     </form>
   );
 }

@@ -1,0 +1,25 @@
+.Lista {
+  background-color: #020116;
+  padding: 5px;
+  list-style: none;
+}
+
+.Tarefa {
+  width: 100%;
+  min-width: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Tarefa button {
+  padding: 0;
+  border: none;
+}
+
+.Checked {
+  color: green;
+  width: 30px;
+  height: 30px;
+}
